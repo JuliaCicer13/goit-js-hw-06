@@ -9,8 +9,8 @@ class StringBuilder {
         return this.#value;
     }
     padEnd(str) {
-        this.#value = this.#value + str;
-        return this;
+       return this.#value = this.#value + str;
+    
     }
     padStart(str) {
         this.#value = str + this.#value;
@@ -18,7 +18,7 @@ class StringBuilder {
     }
     padBoth(str) {
      
-        return this.padStart(str).padEnd(str);
+        return this.#value = this.padStart(str).padEnd(str);
     }
 }
 const builder = new StringBuilder(".");
