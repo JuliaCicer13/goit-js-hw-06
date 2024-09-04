@@ -1,9 +1,9 @@
 class Storage  {
     
-    #items;
+    #items
 
-    constructor(initialItems) {
-        this.#items = initialItems;
+    constructor(items) {
+        this.#items = items;
     }
 
     getItems() {
@@ -13,8 +13,7 @@ class Storage  {
         this.#items.push(newItem)
     }
     removeItem(itemToRemove) {
-        this.#items =
-            this.#items.filter(item => item !== itemToRemove);
+      this.#items = this.#items.filter( item => item !== itemToRemove)
     }
 }
 
